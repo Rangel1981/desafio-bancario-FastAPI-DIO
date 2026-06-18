@@ -29,8 +29,8 @@ Pydantic v2: Validação de dados e gerenciamento de schemas.
 
 📦 Como Executar o Projeto
 1. Clonar o repositório
-git clone https://github.com/seu-usuario/desafio-bancario-FastAPI-DIO.git
-cd desafio-bancario-FastAPI-DIO
+git clone **link do repositório**
+cd **pasta do repositório**
 
 2. Configurar o Ambiente Virtual (venv)
 Criar o ambiente virtual
