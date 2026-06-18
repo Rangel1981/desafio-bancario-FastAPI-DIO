@@ -1,8 +1,9 @@
 from contextlib import asynccontextmanager
 from fastapi import FastAPI
 from src.database import engine, Base
-from src import models  # Isso garante que o SQLAlchemy conheça os modelos no startup
+from src import models  
 from src.routers import auth as auth_router
+from src.routers import transactions as transactions_router
 
 
 @asynccontextmanager
@@ -28,6 +29,8 @@ app = FastAPI(
 )
 
 app.include_router(auth_router.router)
+app.include_router(transactions_router.router)
+
 
 @app.get("/")
 def read_root():

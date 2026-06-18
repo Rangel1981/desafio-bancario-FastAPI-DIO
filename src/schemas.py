@@ -34,3 +34,9 @@ class TransactionResponse(BaseModel):
 
     class Config:
         from_attributes = True
+
+class BalanceResponse(BaseModel):
+    balance: float
+
+    class Config:
+        from_attributes = True
